@@ -1,0 +1,40 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+}
+
+.gallery {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .gallery {
+         grid-template-areas: ' myArea myArea .' 'myArea myArea .';;
+    }
+
+    .img3 {
+grid-area: myArea;
+    }
+
+
+}
